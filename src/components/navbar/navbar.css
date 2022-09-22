@@ -1,0 +1,117 @@
+.sacola{
+  width: 50px;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.navbar{
+  display: flex;
+  
+  margin-left: 250px;
+  align-items: center;
+}
+.categorias{
+  list-style-type: none;
+  background-color: #9747FF;
+  margin-left: 80px;
+  padding: 15px 15px;
+  border-radius: 4px;
+  display: flex;
+  height: 16px;
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+.categorias li{
+  align-items: center;
+  display: flex;
+}
+
+.categorias__span{
+  padding-left: 15px;
+}
+
+.pesquisa{
+  margin-left: 80px;
+}
+.pesquisa input{
+  width: 340px;
+  height: 38px;
+  padding-left: 40px;
+  border: 1px solid gray;
+  background-color: rgb(221, 220, 220);
+  border-radius: 4px;
+  
+}
+
+.pesquisa__select{
+  width: 340px;
+  height: 38px;
+  padding-left: 40px;
+  border: 1px solid gray;
+  background-color: rgb(221, 220, 220);
+  border-radius: 4px;
+}
+.pesquisa label{
+  position: absolute;
+  left: 696px;
+  top: 32px;
+  
+}
+.pesquisa label i{
+  color: gray;
+}
+
+.bx-search-alt-2 {
+  color: #fff;
+}
+.pesquisa select{
+  width: 120px;
+  height: 43px;
+  margin-left: 4px;
+  color: rgb(124, 123, 123);
+  padding: 11px;
+}
+
+.pesquisa button{
+  padding: 12px;
+  margin-left: 4px;
+  background-color: #9747FF;
+  border-radius: 4px;
+  border: 1px solid #9747FF;
+  
+}
+
+.painel{
+  margin-left: 130px;
+}
+
+.painel button{
+  padding: 11px;
+  border: solid 1px #9747FF;
+  background-color: #fff;
+  margin-left: 12px;
+
+}
+.painel button i {
+  color: #9747FF;
+  
+}
+.painel__link:hover{
+  background-color: #9747FF;
+  border: 1px solid #9747FF;
+  transition: 200ms ease-in-out;
+}
+.painel__link:hover i{
+  color: #fff;
+}
+
+

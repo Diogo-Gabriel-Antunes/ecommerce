@@ -1,0 +1,31 @@
+.footer{
+  padding-left: 228px;
+  padding-top: 24px;
+  background-color: #F2F2F2;
+}
+
+.footer img{
+  width: 50px;
+}
+.footer_logo{
+  display: flex;
+  align-items: center;
+}
+.footer_firstContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer_marca{
+  display: flex;
+}
+
+ul{
+  list-style: none;
+}
+
+.footer_socialmedia ul{
+  margin-left: -39px;
+}
+.footer_lista{
+  margin-bottom: 16px;
+}

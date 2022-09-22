@@ -1,0 +1,41 @@
+.Opcoes__Lista{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;  
+  font-size: 24px;
+  margin: 0px 285px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  
+}
+
+.Opcoes__Lista__li{
+  margin-left: 160px;
+  
+  
+}
+.lista_Interna_li {
+  display: none;
+  margin: 8px 0px ;
+  margin-left: -40px;
+  
+  
+}
+.lista_Interna{
+  display: none;
+  margin-left: 0px;
+  margin: 0px 0px;
+  
+}
+
+.Opcoes__Lista__li:hover .lista_Interna, .lista_Interna_li{
+  
+  display: block;
+}
+
+.opcoes_link{
+  text-decoration: none;
+  color: black;
+  
+}
+

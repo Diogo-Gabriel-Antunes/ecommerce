@@ -1,0 +1,38 @@
+.carrinho__NavBar{
+  width: 848px;
+  
+  padding: 16px;
+}
+.carrinho__display{
+  width: 1120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 237px;
+  min-height: 700px;
+  height: 100%;
+}
+.carrinho__Total{
+  width: 380px;
+  padding: 16px;
+}
+.carrinho__Total__card{
+  padding: 0px 16px;
+}
+.carrinho__Total__card__interna{
+  display: flex;
+  justify-content: space-between;
+}
+.carrinho_produto_display{
+  display: flex;
+  justify-content: space-between;
+  width: 708px;
+}
+
+.carrinho_produto_display_botoes{
+  display: flex;
+  flex-direction: row;
+}
+.carrinho_contador{
+  display: flex;
+  justify-content: flex-start;
+}
