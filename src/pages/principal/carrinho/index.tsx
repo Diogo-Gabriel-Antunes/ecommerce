@@ -1,14 +1,16 @@
-import NavBar from "../../components/navbar"
+
 import { Card, Button } from '@mui/material'
 import { useEffect, useState } from "react"
 import './carrinho.css'
 import { useParams,Navigate,useNavigate} from "react-router-dom"
 import axios from 'axios';
-import ItensCarrinho from "../../components/itensCarrinho"
-import Footer from "../../components/footer"
-import isAuthenticated from '../../auth/auth'
-import IProduto from "../../interfaces/IProduto"
+
+import isAuthenticated from '../../../auth/auth'
+import IProduto from "../../../interfaces/IProduto"
 import { error } from "console"
+import NavBar from '../../../components/principal/navbar';
+import ItensCarrinho from '../../../components/principal/itensCarrinho';
+import Footer from '../../../components/principal/footer';
 
 
 
@@ -84,7 +86,7 @@ const Carrinho =  (props) => {
           <Card>
             <div className="carrinho__Total__card">
               <h2>Total</h2>
-              <div className="carrinho__Total__card__interna">
+              <div className="carrinho__Total__card__interna"> 
                 <p>Sub-Total</p>
                 <p>R${subTotal.toLocaleString()}</p>
               </div>
@@ -100,7 +102,7 @@ const Carrinho =  (props) => {
                 width: 200,
                 mx: 10,
                 my: 4
-              }} variant="contained">Continuar</Button>
+              }} variant="contained">Continuar</Button> 
             </div>
           </Card>
         </div>

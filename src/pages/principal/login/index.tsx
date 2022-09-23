@@ -1,4 +1,4 @@
-import NavBar from "../../components/navbar"
+
 import {TextField, Button} from '@mui/material';
 import './login.css'
 import { Link, RedirectFunction} from "react-router-dom";
@@ -6,6 +6,7 @@ import axios from 'axios'
 import { useState } from "react";
 import nookies from 'nookies'
 import { Navigate } from 'react-router-dom'
+import NavBar from '../../../components/principal/navbar';
 
 interface resposta{
 

@@ -1,13 +1,13 @@
-import sacola from '../../assets/sacola.svg'
+import sacola from '../../../assets/sacola.svg'
 import './navbar.css'
-import menu from '../../assets/menu.svg'
+import menu from '../../../assets/menu.svg'
 import { Link } from 'react-router-dom'
 import {TextField, Button} from '@mui/material';
 import jwt from 'jwt-decode'
 import nookies from 'nookies'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import isAuthenticated from '../../auth/auth';
+import isAuthenticated from '../../../auth/auth';
 
 
 interface user{

@@ -1,4 +1,4 @@
-import sacola from '../../assets/sacola.svg'
+import sacola from '../../../assets/sacola.svg'
 import './footer.css'
 
 const Footer = () => {

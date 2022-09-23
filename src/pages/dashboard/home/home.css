@@ -1,0 +1,10 @@
+.homeDashBoard{
+    width: 360px;
+}
+.home{
+    display: flex;
+}
+.homeDashBoard__Link{
+    text-decoration: none;
+    color: inherit;
+}

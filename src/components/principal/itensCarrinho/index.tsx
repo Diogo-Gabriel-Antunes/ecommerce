@@ -1,5 +1,5 @@
 import { Button, List, ListItem, ListItemAvatar, Avatar, ListItemText, Divider } from '@mui/material'
-import IProduto from '../../interfaces/IProduto'
+import IProduto from '../../../interfaces/IProduto'
 import axios from 'axios'
 import nookies from 'nookies'
 import jwt from 'jwt-decode'

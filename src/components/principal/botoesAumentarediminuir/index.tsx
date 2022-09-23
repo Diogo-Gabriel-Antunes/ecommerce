@@ -1,6 +1,6 @@
 import { Button } from "@mui/material"
 import { useEffect, useState } from "react"
-import IProduto from "../../interfaces/IProduto"
+import IProduto from "../../../interfaces/IProduto"
 
 interface Props{
   produtos:IProduto[],
