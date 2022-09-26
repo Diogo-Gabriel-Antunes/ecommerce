@@ -6,6 +6,8 @@ import Login from './pages/principal/login';
 import ProdutosPorCategoria from './pages/principal/Produtos';
 import Curtidas from './pages/principal/curtidas';
 import HomeDashboard from './pages/dashboard/home';
+import DashBoardDeVendas from './pages/dashboard/dashboardVendas';
+import VendaDosMes from './pages/dashboard/vendasDomes';
 
 
 
@@ -21,7 +23,8 @@ function App() {
         <Route path='/carrinho/:id' element={<Carrinho/>}/>
         <Route path='/curtidas' element={<Curtidas/>}/>
         <Route path='/login/dashboard/:id' element={<HomeDashboard/>}/>
-        
+        <Route path='/login/dashboard/:id/dashboardvendas' element={<DashBoardDeVendas/>}/>
+        <Route path='/login/dashboard/:id/vendasdomes' element={<VendaDosMes/>}/>
         
       </Routes>
     </BrowserRouter>

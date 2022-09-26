@@ -9,12 +9,12 @@ const Footer = () => {
           <ul>
             <li className='footer_marca'>
               <img src={sacola} alt="" />
-             <p >Ecommerce</p>
-          </li>
-          <li><p>Description copmany</p></li>
+              <p >Ecommerce</p>
+            </li>
+            <li><p>Description copmany</p></li>
           </ul>
-          
-          
+
+
         </div>
         <div className='footer_socialmedia'>
           <h2>Social Media</h2>
@@ -30,7 +30,7 @@ const Footer = () => {
           <ul>
             <li className='footer_lista'>email@email.com.br</li>
             <li className='footer_lista'>(99)9999-9999</li>
-            
+
           </ul>
         </div>
       </div>

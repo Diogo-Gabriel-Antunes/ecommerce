@@ -1,10 +1,30 @@
-.homeDashBoard{
+.homeDashBoard__barralateral{
     width: 360px;
 }
-.home{
+.homeDashBoard{
     display: flex;
 }
 .homeDashBoard__Link{
     text-decoration: none;
     color: inherit;
+}
+
+.homeDashBoard__conteudo{
+    margin: 18px auto;
+}
+.homeDashBoard__conteudo h1{
+    text-align: center;
+}
+.homeDashBoard__conteudo__h2{
+    margin-top: 50px;
+}
+
+.homeDashBoard__barralateral h1{
+    text-align: center;
+}
+.homeDashBoard__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 8px;
 }
