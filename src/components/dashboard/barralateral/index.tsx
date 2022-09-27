@@ -37,12 +37,12 @@ const BarraLateralDashBoard = () => {
     <div>
       <div>
         <List
-          sx={{ width: '100%', maxWidth: 360, bgcolor: '#5EF27E', height: "100vh", borderRight: 1 }}
+          sx={{ width: '100%', maxWidth: 360, bgcolor: '#9747FF', height: "120vh", borderRight: 1 }}
           component="nav"
           aria-labelledby="nested-list-subheader"
           subheader={
-            <ListSubheader component="div" id="nested-list-subheader" sx={{ bgcolor: '#5EF27E' }}>
-              DashBoard Do usuario
+            <ListSubheader component="div" id="nested-list-subheader" sx={{ bgcolor: '#9747FF' }}>
+              DashBoard do usuario
             </ListSubheader>
           }
         > 
@@ -135,43 +135,7 @@ const BarraLateralDashBoard = () => {
               </Link>
             </List>
           </Collapse>
-          <ListItemButton onClick={() => handleClick(listaMensagens, setListaMensagens)}>
-            <ListItemIcon>
-              <InboxIcon />
-            </ListItemIcon>
-            <ListItemText primary="Mensagens" />
-            {listaMensagens ? <ExpandLess /> : <ExpandMore />}
-          </ListItemButton>
-          <Collapse in={listaMensagens} timeout="auto" unmountOnExit>
-            <List component="div" disablePadding>
-              <Link to={`/login/dashboard/${parametros.id}/enviarmensagem`} className="homeDashBoard__Link">
-                <ListItemButton sx={{ pl: 4 }}>
-                  <ListItemIcon>
-                    <ReplyIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Mensagem Recebidas" />
-                </ListItemButton>
-              </Link>
-              <Link to={`/login/dashboard/${parametros.id}/mensagensenviadas`} className="homeDashBoard__Link">
-
-                <ListItemButton sx={{ pl: 4 }}>
-                  <ListItemIcon>
-                    <MarkEmailReadIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Mensagem Enviadas" />
-                </ListItemButton>
-              </Link>
-              <Link to={`/login/dashboard/${parametros.id}/enviarmensagem`} className="homeDashBoard__Link">
-
-                <ListItemButton sx={{ pl: 4 }}>
-                  <ListItemIcon>
-                    <SendIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Enviar Mensagem" />
-                </ListItemButton>
-              </Link>
-            </List>
-          </Collapse>
+          
 
         </List>
       </div>

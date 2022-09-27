@@ -1,0 +1,11 @@
+.editarProduto__conteudo h1{
+  text-align: center;
+  
+}
+.editarProduto__conteudo{
+  width: 229vh;
+}
+.editarProduto__display{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}

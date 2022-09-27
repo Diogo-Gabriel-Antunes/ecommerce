@@ -18,7 +18,7 @@ const Login=()=>{
   const [senha,setSenha] = useState('')
   const [navegacao,setNavegacao] = useState(false)
   if(navegacao){
-    return <Navigate to="/login/dashboard"/>
+    return <Navigate to="/"/>
   }
   return(
     <div>

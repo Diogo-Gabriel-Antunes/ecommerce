@@ -1,12 +1,12 @@
 import BarraLateralDashBoard from "../../../components/dashboard/barralateral"
-import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import './dashboardevendas.css'
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
+import InventoryIcon from '@mui/icons-material/Inventory';
 import axios from "axios";
 import PaperDeVendas from "../../../components/dashboard/PaperDeVendas";
-import InventoryIcon from '@mui/icons-material/Inventory';
 import TabelaDeVendas from "../../../components/dashboard/tabelaDeVendas";
 
 
@@ -38,28 +38,34 @@ const DashBoardDeVendas = () => {
       </div>
       <div className="homeDashBoard__conteudo">
         <h1>DashBoard De Vendas</h1>
-        <div className="dashboarddevendas__cards">
+        <div className="VendaDoMes__cards">
           <PaperDeVendas 
           titulo="Total Ganho : " 
           valor={totalGanho?.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} 
           icone={<MonetizationOnIcon />}
+          padrao ={true}
            />
 
           <PaperDeVendas 
           titulo="Total de pedidos :" 
           valor={totalPedidos} 
-          icone={<ProductionQuantityLimitsIcon />} />
+          icone={<ProductionQuantityLimitsIcon />} 
+          padrao ={true}
+          />
 
           <PaperDeVendas 
           titulo="Total de Produtos Vendidos :" 
           valor={totalDeProdutosVendidos} 
-          icone={<ProductionQuantityLimitsIcon />} />
+          icone={<ProductionQuantityLimitsIcon />} 
+          padrao ={true}
+          />
 
           <PaperDeVendas 
           titulo="Produto Campeão :" 
           valor={produtoMaisVendido} 
-          icone={<InventoryIcon />} />
-
+          icone={<InventoryIcon />} 
+          padrao ={true}
+          />
         </div>
         <TabelaDeVendas vendas={vendas}/>
       </div>

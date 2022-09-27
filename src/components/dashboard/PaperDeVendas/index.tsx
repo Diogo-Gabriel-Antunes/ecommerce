@@ -2,9 +2,11 @@ import { Paper } from "@mui/material"
 import './paperDevendas.css'
 
 const PaperDeVendas = (props) => {
+  
   return (
-    <div className="dashboarddevendas_div">
-      <Paper elevation={3} sx={{ padding: 2, bgcolor: '#5EF27E' }}>
+    
+    <div className={props.padrao? "dashboarddevendas_div": "dashboarddevendas_divcom5"}>
+      <Paper elevation={3} sx={{ padding: 2, bgcolor: '#9747FF' }}>
         <div className="dashboarddevendas__divpaper">
           {props.icone}
           <h4>{props.titulo} </h4>

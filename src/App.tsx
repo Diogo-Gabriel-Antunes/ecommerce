@@ -8,6 +8,10 @@ import Curtidas from './pages/principal/curtidas';
 import HomeDashboard from './pages/dashboard/home';
 import DashBoardDeVendas from './pages/dashboard/dashboardVendas';
 import VendaDosMes from './pages/dashboard/vendasDomes';
+import SeusProdutos from './pages/dashboard/seusProdutos';
+
+import FormularioProduto from './pages/dashboard/seusProdutos/FormularioDeProdutos';
+import UltimasCompras from './pages/dashboard/ultimasCompras';
 
 
 
@@ -25,7 +29,10 @@ function App() {
         <Route path='/login/dashboard/:id' element={<HomeDashboard/>}/>
         <Route path='/login/dashboard/:id/dashboardvendas' element={<DashBoardDeVendas/>}/>
         <Route path='/login/dashboard/:id/vendasdomes' element={<VendaDosMes/>}/>
-        
+        <Route path='/login/dashboard/:id/seusprodutos' element={<SeusProdutos/>}/>
+        <Route path='/login/dashboard/:id/seusprodutos/:produtoId' element={<FormularioProduto/>}/>
+        <Route path='/login/dashboard/:id/novoproduto' element={<FormularioProduto/>}/>
+        <Route path='/login/dashboard/:id/ultimascompras' element={<UltimasCompras/>}/>
       </Routes>
     </BrowserRouter>
   );

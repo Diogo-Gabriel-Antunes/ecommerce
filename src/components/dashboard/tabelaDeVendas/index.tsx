@@ -11,13 +11,13 @@ function dataAtualFormatada(dataASerFormatada:Date){
 }
 
 const TabelaDeVendas = (props)=>{
-  
+  console.log(props.vendas)
   return(
     <div className="TabelaDeVendas__container">
       <div>
       <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-        <TableHead sx={{bgcolor: '#5EF27E'}}>
+        <TableHead sx={{bgcolor: '#9747FF'}}>
           <TableRow>
             <TableCell>ID</TableCell>
             <TableCell align="right">ProdutoId</TableCell>
@@ -27,7 +27,7 @@ const TabelaDeVendas = (props)=>{
           </TableRow>
         </TableHead>
         <TableBody>
-          {props.vendas.slice(0,10).map((item) => (
+          {props.vendas? props.vendas.slice(0,10).map((item) => (
             <TableRow
               key={item.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -40,7 +40,7 @@ const TabelaDeVendas = (props)=>{
               <TableCell align="right">{dataAtualFormatada(item.Data)}</TableCell>
               
             </TableRow>
-          ))}
+          )): "Sem vendas nesse mes"}
         </TableBody>
       </Table>
     </TableContainer>

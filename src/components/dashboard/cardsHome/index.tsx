@@ -15,7 +15,7 @@ const CardHome = (props)=>{
 							<TableContainer component={Paper}>
 								<Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
 									<TableHead>
-										<TableRow sx={{bgcolor: '#5EF27E'}}>
+										<TableRow sx={{bgcolor: '#9747FF'}}>
 											<TableCell>{ props.colunas[0]}</TableCell>
 											<TableCell align="right">{props.colunas[1]}</TableCell>
 											<TableCell align="right">{props.colunas[2]}</TableCell>
